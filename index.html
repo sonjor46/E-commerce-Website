@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Shopping Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛒 Online Shopping</h1>
+    <nav>
+      <a href="#" id="homeLink">Home</a>
+      <a href="#" id="productsLink">Products</a>
+      <a href="#" id="cartLink">
+        Cart <span id="cartCount" class="badge">0</span>
+      </a>
+      <a href="#" id="loginLink">Login</a>
+      <a href="#" id="registerLink">Register</a>
+      <button id="logoutBtn" class="hidden">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page">
+      <h2>Welcome to Online Shopping</h2>
+      <p>Find your favorite products and manage your cart easily.</p>
+    </section>
+
+    <section id="products" class="page hidden">
+      <h2>Products</h2>
+      <div id="productList" class="product-list"></div>
+    </section>
+
+    <section id="cart" class="page hidden">
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+    </section>
+
+    <section id="login" class="page hidden">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="register" class="page hidden">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="text" id="regName" placeholder="Full Name" required />
+        <input type="email" id="regEmail" placeholder="Email" required />
+        <input type="password" id="regPassword" placeholder="Password" required />
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Online Shopping Management System <br> Under Construction </br> </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
